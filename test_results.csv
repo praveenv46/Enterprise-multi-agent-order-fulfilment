@@ -1,0 +1,50 @@
+request_id,request_date,cash_balance,inventory_value,response
+1,2025-04-01,45124.7,4875.3,"Quoted Amount: 65.00, Fulfillment Decision: Order Fulfilled, Sales Transaction IDs: [21, 20, 22], Unavailable Items: None"
+2,2025-04-03,45124.7,4875.3,"Order rejected due to unavailable items: streamers, balloons. The requested items streamers and balloons do not have valid catalog matches."
+3,2025-04-04,45124.7,4875.3,"Order rejected due to unavailable item: 5,000 sheets of A3 paper. The order cannot be processed as the item is not available in the catalog."
+4,2025-04-05,45124.7,4875.3,"Order rejected due to unavailable items. Unavailable items: 500 sheets of high-quality, recycled cardstock in various colors."
+5,2025-04-05,45124.7,4875.3,Order rejected due to the unavailability of the following item: 200 rolls of decorative washi tape.
+6,2025-04-06,45223.68,4845.3,"Quoted Amount: 99.00\nFulfillment Decision: Fulfilled\nDelivery Date for Supplier Delivery: 2025-04-10\nSales Transaction IDs: [24, 23, 25]\nStock-order Transaction IDs: [26, 27] \nUnavailable Items: None."
+7,2025-04-07,45223.68,4845.3,"The entire order has been rejected due to the following unavailable items: 1000 sheets of matte A3 paper, 300 poster boards (24"" x 36""). The A4 glossy paper and heavyweight cardstock were available, however, since multiple items in the order were unavailable, the order cannot be fulfilled."
+8,2025-04-07,45223.68,4845.3,"The order has been rejected due to the availability issues. Unavailable items include:
+- 1000 sheets of A4 matte paper
+- 2000 sheets of A5 colored paper.
+
+Quote Explanation: ""The bulk order includes available glossy and recycled paper at competitive pricing. Matte and colored papers are currently unavailable."""
+9,2025-04-07,45223.68,4845.3,"The order has been rejected due to unavailable items. The following items are unavailable: 
+- 100 sheets of A3 glossy paper
+- 50 packets of 100% recycled kraft paper envelopes. 
+
+Quoted amount: $10.00."
+13,2025-04-08,45223.68,4845.3,"Order rejected due to unavailable item: A4 paper cannot be fulfilled in time. The supplier delivery date of 2025-04-12 does not meet the customer requirement of April 10, 2025."
+12,2025-04-08,45248.68,4815.3,"Quoted Amount: 46.17
+Fulfillment Decision: Order Fulfilled
+Delivery Dates: Standard copy paper - April 12, Paper napkins - April 9
+Sales Transaction IDs: 28
+Stock-order Transaction IDs: 30
+Unavailable items: None"
+10,2025-04-08,45325.83,4723.65,"Quoted Amount: 130.50
+Fulfillment Decision: Order Fulfilled
+Delivery Date: 2025-04-12
+Sales Transaction IDs: [33, 32]
+Stock Order Transaction IDs: [31, 34]
+Unavailable Items: None"
+11,2025-04-08,45325.83,4723.65,Order rejected. Unavailable item: A4 matte paper.
+14,2025-04-09,45325.83,4723.65,"Order rejected due to unavailable items: poster paper in various colors. The poster paper has no available pricing, making it classified as unavailable."
+15,2025-04-12,45325.83,4723.65,"The order has been rejected due to the following unavailable items:
+- 5,000 sheets of A3 colored paper (assorted colors)
+- 500 reams of cardboard for signage
+
+The only available item is:
+- 10,000 sheets of A4 white paper at a total price of $450.00 after a 10% discount"
+16,2025-04-13,45325.83,4723.65,Order rejected due to UNAVAILABLE ITEMS: 100 sheets of poster board. The item is not available in the catalog.
+17,2025-04-14,45325.83,4723.65,"The order has been rejected due to the unavailability of the following items: table napkins (white), paper cups (biodegradable), paper plates (biodegradable). Quoted amount: $100.00. Reason: Some items requested are not available in the catalog."
+18,2025-04-14,45325.83,4723.65,"Order rejected due to insufficient stock for both Cardstock and Standard copy paper. Unavailable items: Cardstock (500 sheets), Standard copy paper (1000 sheets). Supplier cannot meet the delivery deadline."
+19,2025-04-15,45325.83,4723.65,"The order has been rejected due to the inability to fulfill the entire request on time. 
+
+**Unavailable Items and Reasons for Rejection:**
+- Glossy paper: Supplier cannot meet the required delivery date.
+- Matte paper: Supplier cannot meet the required delivery date.
+
+Only cardstock is available for timely delivery, but since not all items can be fulfilled, the entire order is rejected."
+20,2025-04-17,45325.83,4723.65,The order is rejected due to the following unavailable items: posters and tickets. The total quoted amount is $675.00 for the available flyers only.
