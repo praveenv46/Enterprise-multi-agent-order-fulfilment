@@ -83,35 +83,6 @@ The project uses four CSV files, each serving a different purpose.
 | **quote_requests_sample.csv** | New customer requests used to evaluate the complete multi-agent workflow. Each request is processed through the Orchestrator. |
 | **test_results.csv** | Generated automatically after running the evaluation. Stores the response, updated cash balance, and inventory value for every processed request. |
 
-### Data Flow
-
-```
-Historical Requests
-quote_requests.csv
-          │
-          ▼
-Historical Quotes
-quotes.csv
-          │
-          ▼
-Sales Agent
-(Historical Pricing)
-
-────────────────────────────────
-
-New Customer Requests
-quote_requests_sample.csv
-          │
-          ▼
-Orchestrator
-          │
-          ▼
-Multi-Agent Workflow
-          │
-          ▼
-test_results.csv
-```
-
 ---
 
 # Technologies
