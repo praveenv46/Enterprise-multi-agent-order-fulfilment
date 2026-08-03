@@ -1,0 +1,30 @@
+flowchart TD
+
+    O["Orchestrator"]
+
+    O --> GQ["<<Tool>><br/>generate_sales_quote<br/><br/>Purpose: Delegate quote generation to Sales Agent<br/>Input: customer_request<br/>Output: quote, mapped items, unavailable items"]
+
+    O --> CI["<<Tool>><br/>check_order_inventory<br/><br/>Purpose: Delegate inventory validation to Inventory Agent<br/>Input: item, quantity, date<br/>Output: stock status and shortage"]
+
+    O --> SF["<<Tool>><br/>check_supplier_filfillment<br/><br/>Purpose: Delegate supplier delivery check to Purchase Agent<br/>Input: item, shortage, dates<br/>Output: supplier delivery date and feasibility"]
+
+    O --> RT["<<Tool>><br/>record_business_transaction<br/><br/>Purpose: Delegate transaction processing to Finance Agent<br/>Input: transaction details<br/>Output: transaction status, transaction ID, updated cash balance"]
+
+    GQ --> S["Sales Agent"]
+    CI --> I["Inventory Agent"]
+    SF --> P["Purchase Agent"]
+    RT --> F["Finance Agent"]
+
+    S --> QT["<<Tool>><br/>quoting_history<br/><br/>Purpose: Historical pricing lookup<br/>Input: keyword list<br/>Output: quote records<br/>Helper: search_quote_history"]
+
+    I --> IT["<<Tool>><br/>inventory_specific_item<br/><br/>Purpose: Check one item stock<br/>Input: paper_type, as_of_date<br/>Output: item_name, current_stock<br/>Helper: get_stock_level"]
+
+    I --> IF["<<Tool>><br/>Inventory_full<br/><br/>Purpose: View complete inventory<br/>Input: as_of_date<br/>Output: item-stock dictionary<br/>Helper: get_all_inventory"]
+
+    P --> DT["<<Tool>><br/>check_delivery_time<br/><br/>Purpose: Estimate supplier delivery<br/>Input: input_date, quantity, required_delivery_date<br/>Output: supplier date, can_meet_deadline<br/>Helper: get_supplier_delivery_date"]
+
+    F --> PT["<<Tool>><br/>process_transaction<br/><br/>Purpose: Record sales or stock-order transaction<br/>Input: item, type, quantity, price, date<br/>Output: status, transaction ID, cash balance<br/>Helpers: create_transaction, get_cash_balance"]
+
+    F --> GR["<<Tool>><br/>generate_report<br/><br/>Purpose: Generate financial & inventory report<br/>Input: as_of_date<br/>Output: cash, inventory, assets, top sales<br/>Helper: generate_financial_report"]
+
+    F --> CB["<<Tool>><br/>check_cash_balance<br/><br/>Purpose: Check available company cash<br/>Input: as_of_date<br/>Output: cash balance<br/>Helper: get_cash_balance"]
